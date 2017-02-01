@@ -1,0 +1,92 @@
+html {
+	height: 100%;
+	}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 12pt;
+	background-color: #F0F0F7;
+}
+#wrapper {
+	height: 100%;
+	}
+#sidebar-left {
+	width: 210px;
+	height: 100%;
+	background-color: #F0F0F7;
+	float: left;
+	padding: 0 40px 0 40px;
+	}
+#sidebar-content {
+	padding: 40px 0 0 0;
+	}
+#main {
+	width: 600px;
+	height: 100%;
+	display: block;
+	float: left;
+	min-width: 780px;
+	}
+#main-content {
+	height: 100%;
+	padding: 40px;
+	background-color: #FFFFFF;
+	}
+#navlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+#navlist li {
+    padding: 2px 0 2px 20px;
+    background: url(http://a29.myrootshell.com:8080/rdademo/site_media/img/menu-leaf.gif) no-repeat 5px .5em;
+	}
+a:active, a.active {
+	color: #5894BE;
+	}
+a:link, a:visited {
+	color: #027AC6;
+	text-decoration: none;
+	}
+.field_wrapper {
+	float: left;
+	clear:left;
+	width: auto;
+	margin: 4px 0 4px 0;
+	display: block;
+	}
+.field_label {
+	width: 240px;
+	height: 20px;
+	float: left
+	}
+.field {
+	float: left
+	}
+	
+.form-box {
+	width: auto;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 10px;
+	}
+.form-box fieldset {
+	width: auto;
+	padding: 10px;
+
+	border: solid 1px #75abea;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	overflow:hidden;
+	}
+.form-box legend {
+	color: #0077d4;
+	}
+.form-box label {
+	color: #333;
+	}

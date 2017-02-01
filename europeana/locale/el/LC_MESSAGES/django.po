@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-20 22:52+0200\n"
+"PO-Revision-Date: 2010-01-21 01:41+0200\n"
+"Last-Translator: Mika Nyman <info@synapse-computing.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\flatpages\about.html.py:35
+msgid "we are in beta!!!"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:50
+msgid "My Europeana"
+msgstr "Η Europeana μου"
+
+#: .\templates\flatpages\about.html.py:51
+msgid "Communities"
+msgstr "Κοινότητες"
+
+#: .\templates\flatpages\about.html.py:52
+msgid "Partners"
+msgstr "Εταίροι"
+
+#: .\templates\flatpages\about.html.py:53
+msgid "Timeline (beta)"
+msgstr "Λωρίδα χρόνου (beta)"
+
+#: .\templates\flatpages\about.html.py:54
+msgid "Thought lab"
+msgstr "Εργαστήριο σκέψης"
+
+#: .\templates\flatpages\about.html.py:57
+msgid "Choose a language"
+msgstr "Επιλέξτε γλώσσα"
+
+#: .\templates\flatpages\about.html.py:99
+#: .\templates\flatpages\about.html.py:114
+msgid "About us"
+msgstr "Για μας"
+
+#: .\templates\flatpages\about.html.py:101
+msgid "Storyline and Credits"
+msgstr "Χρησιμοποιώντας τη Europeana"
+
+#: .\templates\flatpages\about.html.py:107
+msgid "Click here to return to the Europeana homepage"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:107
+msgid "logo Europeana think culture"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:115
+msgid "Using Europeana"
+msgstr "Χρησιμοποιώντας τη Europeana"
+
+#: .\templates\flatpages\about.html.py:116
+msgid "Accessibility"
+msgstr "Προσβασιμότητα"
+
+#: .\templates\flatpages\about.html.py:117
+msgid "Sitemap"
+msgstr "Χάρτης πλοήγησης"
+
+#: .\templates\flatpages\about.html.py:118
+msgid "Terms and conditions"
+msgstr "Όροι και συνθήκες"
+
+#: .\templates\flatpages\about.html.py:119
+msgid "Privacy"
+msgstr "Προστασία της ιδιωτικής ζωής"
+
+#: .\templates\flatpages\about.html.py:120
+msgid "Language policy"
+msgstr "Προστασία της ιδιωτικής ζωής"
+
+#: .\templates\flatpages\about.html.py:121
+msgid "Contacts | Send us feedback"
+msgstr "Επικοινωνία | Στείλτε μας ανάδραση"
+
+#: .\templates\flatpages\about.html.py:122
+msgid "co-funded by the European Union"
+msgstr "συγχρηματοδοτούμενο από την Ευρωπαϊκή Ένωση"
+
+#: .\templates\flatpages\about.html.py:122
+msgid "icon-european union flag"
+msgstr ""
+

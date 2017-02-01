@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<fieldset>
+<legend>{% trans "User Profile" %}</legend>
+<table>
+  <tr><th><label>{% trans "First Name" %}: </label></th><td class="data">{{ profile.first_name }}</td></tr>
+  <tr><th><label>{% trans "Last Name" %}: </label></th><td class="data">{{ profile.last_name }}</td></tr>
+  <tr><th><label>{% trans "Institution" %}: </label></th><td class="data">{{ profile.institution }}</td></tr>
+  <tr><th><label>{% trans "Email" %}: </label></th><td class="data">{{ profile.email }}</td></tr>
+  <tr><th><label>{% trans "Phone 1" %}: </label></th><td class="data">{{ profile.phone1 }}</td></tr>
+  <tr><th><label>{% trans "Phone 2" %}: </label></th><td class="data">{{ profile.phone2 }}</td></tr>
+</table>
+<div id="message"><a href="{% url profiles_edit_profile %}">{% trans "Manage profile" %}</a></div>
+</fieldset>
+{% endblock %}

@@ -1,0 +1,36 @@
+# CORE
+title
+#preferred_title
+#variant_title
+date
+origin
+form
+other
+identifier
+medium
+signatory
+key
+designation
+#medium
+    
+# ENHANCED
+nature
+coverage
+organization
+audience
+history
+epoch
+source
+status
+cataloguers_note
+status_of_id
+
+# SPECIAL
+academic_degree
+granting_institution
+year_granted
+longitude
+latitude
+coord_pairs
+right_asc_decl
+equinox

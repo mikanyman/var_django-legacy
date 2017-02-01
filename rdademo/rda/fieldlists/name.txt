@@ -1,0 +1,10 @@
+# CORE
+
+# ENHANCED
+scope
+date
+source 
+status
+cataloguers_note 
+
+# SPECIAL

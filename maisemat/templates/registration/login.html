@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<fieldset>
+<legend>{% trans "Log in" %}</legend>
+<form method="post" action=".">
+  <table>
+  {{ form.as_table }}
+  </table>
+  <input type="submit" value="{% trans 'Log in' %}" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+<p>{% trans "Forgot username or password?" %} <a href="{% url auth_password_reset %}">{% trans "Send remeinder email" %}</a></p>
+<p>{% trans "Not member?" %} <a href="{% url registration_register %}">{% trans "Register" %}</a></p>
+</fieldset>
+{% endblock %}

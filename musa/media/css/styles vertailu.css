@@ -1,0 +1,125 @@
+body
+	{
+    background-color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    }
+    
+a:link {color: black; text-decoration:none}
+a:visited {color: black; text-decoration:none}
+a:active {color: #bfbfbf; text-decoration:none}
+a:hover {color: #bfbfbf; text-decoration:none}
+
+#wrap
+	{
+    background-color: #fff;
+	width: 980px;
+    margin: 0 auto; /* t‰m‰ keskitt‰‰ wrapin */
+	border: solid 1px #000;
+	}
+	
+#header
+	{
+	width: auto;
+	height: 40px;
+	color: #fff;
+	background-color: #333;
+	padding: 8px 20px;
+	}
+	
+#content
+	{
+	width: auto;
+	min-height: 440px;
+	padding: 10px;
+	}
+	
+#footer
+	{
+	width: auto;
+	color: #fff;
+	background-color: #333;
+	padding: 8px 20px;
+	}
+	
+#menu
+	{
+	width: auto;
+	height: 28px;
+	background: #333;
+	}
+	
+#menu ul
+	{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+    }
+    
+#menu li
+	{
+    float: left;
+    margin-right: 2px;
+    }
+
+#menu li.first_tab
+	{
+    float: left;
+    margin-right: 2px;
+    margin-left: 20px;
+	}
+	  
+#menu li a
+	{
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:hover {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:visited
+    {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:active
+    {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }    
+    
+/* Hide from IE5-Mac \*/
+#menu li a
+    {
+    float: none
+    }
+/* End hide */
+

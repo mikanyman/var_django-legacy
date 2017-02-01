@@ -1,0 +1,48 @@
+{% extends "rda/base.html" %}
+
+{% block form_fields %}
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+			<div class="field_wrapper">
+              {{ form.name.errors }}			
+			  <div class="field_label">{{ form.name.label_tag }}</div><div class="field"> {{ form.name }}</div><div class="help_text"> {{ form.name.help_text }}</div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+			<div class="field_wrapper">
+              {{ form.identifier.errors }}			
+			  <div class="field_label">{{ form.identifier.label_tag }}</div><div class="field"> {{ form.identifier }}</div><div class="help_text"> {{ form.identifier.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.source.errors }}			
+			  <div class="field_label">{{ form.source.label_tag }}</div><div class="field"> {{ form.source }}</div><div class="help_text"> {{ form.source.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.status.errors }}
+			  <div class="field_label">{{ form.status.label_tag }}</div><div class="field"> {{ form.status }}</div><div class="help_text"> {{ form.status.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.cataloguers_note.errors }}			
+			  <div class="field_label">{{ form.cataloguers_note.label_tag }}</div><div class="field"> {{ form.cataloguers_note }}</div><div class="help_text"> {{ form.cataloguers_note.help_text }}</div>
+            </div>
+          </fieldset>
+        </div>
+
+        {% comment %}
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            <div class="field_wrapper">
+              {{ field.errors }}
+			</div>
+          </fieldset>
+        </div>
+        {% endcomment %}
+
+{% endblock%}

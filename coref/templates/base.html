@@ -1,0 +1,22 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="http://cidoc.coreference.org:8080/coref/css/styles.css" />
+<title>CIDOC Co-reference Working Group</title>
+</head>
+<body>
+<div id="wrap">
+<div id="topbanner">
+  <img src="http://cidoc.coreference.org/coref/img/cidoc_logo.png">
+</div>
+<div id="topnavi">
+{% include "include/topnavi.html" %}
+</div>
+<div id="content">
+{% block content %}{% endblock %}
+</div>
+</div>
+</body>
+</html>

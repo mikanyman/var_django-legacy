@@ -1,0 +1,124 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="http://europeana.eu/portal/favicon.ico" mce_href="favicon.ico"/>
+<script type="text/javascript">var msgRequired = "This is a required field";</script>
+<link rel="stylesheet" type="text/css" href="http://europeana.coreference.org:8080/europeana/site_media/global.css"/>
+<script type="text/javascript" src="http://europeana.coreference.org:8080/europeana/site_media/global.js"></script>
+<title>Europeana - About us</title>
+<link rel="stylesheet" href="http://europeana.coreference.org:8080/europeana/site_media/theme.css" type="text/css"/>
+<!--[if gte IE 6]>
+<link rel="stylesheet" type="text/css" href="http://europeana.eu/portal/css/bundles/ie6.css" />
+<![endif]-->
+<!--[if gte IE 7]>
+<link rel="stylesheet" type="text/css" href="http://europeana.eu/portal/css/bundles/ie7.css" />
+<![endif]-->
+</head>
+<script>
+// JavaScript Document
+function ContactMe(prefix,suffix){
+	var m =  Array(109,97,105,108,116,111,58);
+	var s = '';
+	for (var i = 0; i < m.length; i++){
+		s += String.fromCharCode(m[i]);
+	}
+	window.location.replace(s + prefix + String.fromCharCode(8*8) + suffix);
+	return false;
+}
+</script>
+<div id="doc4" class="yui-t2">
+<div id="hd">
+<div  style="position:absolute; top:20px;left: -20px; width: 80px; height: 80px;"><!-- <img src="http://europeana.coreference.org:8080/europeana/site_media/beta.gif" alt="we are in beta!!!"/> --></div>
+<script type="text/javascript">
+function setNextAndSubmit() {
+    lng = document.forms[0].elements["language"].options[document.forms[0].elements["language"].selectedIndex].value; 
+    nxt = '/' + lng + '/about/';
+    document.forms[0].elements["next"].value = nxt;
+    document.forms[0].submit();
+}
+</script>
+<form action="/i18n/setlang/" method="post">
+<input type="hidden" name="next" value="" />
+<ul id="mainNav">
+  <li><a href="http://europeana.eu/portal/myeuropeana.html" class="">{% trans "My Europeana" %}</a></li>
+  <li><a href="http://europeana.eu/portal/communities.html" class="">{% trans "Communities" %}</a></li>
+  <li><a href="http://europeana.eu/portal/partners.html" class="">{% trans "Partners" %}</a></li>
+  <li><a href="http://europeana.eu/portal/year-grid.html" class="">{% trans "Timeline (beta)" %}</a></li>
+  <li><a href="http://europeana.eu/portal/thought-lab.html" class="">{% trans "Thought lab" %}</a></li>
+  <li class="no-border">
+    <select name="language" onchange="setNextAndSubmit()"><!-- this.form.submit() -->
+      <option selected="selected">{% trans "Choose a language" %}</option>
+      <option value="ca">Catal&#224; (ca)</option>
+      <option value="bg">&#x0411;&#x044a;&#x043b;&#x0433;&#x0430;&#x0440;&#x0441;&#x043a;&#x0438; (bul)</option>
+      <option value="cs">&#268;e&#353;tina (cze/cse)</option>
+      <option value="da">Dansk (dan)</option>
+      <option value="de">Deutsch (deu)</option>
+      <option value="nl">Nederlands (dut)</option>
+      <option value="el">&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940; (ell/gre)</option>
+      <option value="en">English (eng)</option>
+      <option value="es">Espa&#241;ol (esp)</option>
+      <option value="et">Eesti (est)</option>
+      <option value="fi">Suomi (fin)</option>
+      <option value="fr">Fran&#231;ais (fre)</option>
+      <option value="ga">Irish (gle)</option>
+      <option value="hu">Magyar (hun)</option>
+      <option value="is">&#205;slenska (ice)</option>
+      <option value="it">Italiano (ita)</option>
+      <option value="lv">Latvie&#353;u (lav)</option>
+      <option value="lt">Lietuvi&#371; (lit)</option>
+      <option value="mt">Malti (mlt)</option>
+      <option value="no">Norsk (nor)</option>
+      <option value="pl">Polski (pol)</option>
+      <option value="pt">Portugu&#234;s (por)</option>
+      <option value="ro">Rom&#226;n&#259; (rom)</option>
+      <option value="sk">Slovensk&#253; (slo)</option>
+      <option value="sl">Sloven&#353;&#269;ina (slv)</option>
+      <option value="sv">Svenska (sve/swe)</option>
+    </select>
+  </li>
+</ul>
+</form>
+
+{% comment %}
+<form method="post" id="frm-lang" name="frm-lang" style="display: none;" action="">
+  <input  type="hidden" name="lang"/>
+</form>
+</div>
+{% endcomment %}
+
+<div id="bd">
+<div id="yui-main">
+<div class="yui-b">
+<h1>{% trans "About us" %}</h1>
+<object type="application/x-shockwave-flash" width="425" height="355" wmode="transparent" data="http://dev.europeana.eu/objects/flvplayer.swf?file=Europeana-master.flv&amp;autoStart=FALSE"><param name="movie" value="http://dev.europeana.eu/objects/flvplayer.swf?file=Europeana-master.flv&amp;autoStart=false" /><param name="wmode" value="transparent" /></object>
+<br /><a href="http://europeana.eu/portal/thinkvideo.html">{% trans "Storyline and Credits" %}</a>
+{{ flatpage.content }}
+</div>
+</div>
+<div class="yui-b">
+<a href="index.html">
+<img src="http://europeana.coreference.org:8080/europeana/site_media/europeana-logo-small.jpg" alt={% trans "Click here to return to the Europeana homepage" %} title={% trans "logo Europeana think culture" %}/>
+<img src="http://europeana.coreference.org:8080/europeana/site_media/think_culture_en_small.gif" alt=""/></a>
+</div>
+</div>
+
+<div id="ft">
+<ul>
+  <li><a href="http://europeana.eu/portal/aboutus.html" class="current">{% trans "About us" %}</a></li>
+  <li><a href="http://europeana.eu/portal/using-europeana.html" class="">{% trans "Using Europeana" %}</a></li>
+  <li><a href="http://europeana.eu/portal/accessibility.html" class="">{% trans "Accessibility" %}</a></li>
+  <li><a href="http://europeana.eu/portal/sitemap.html"  class="">{% trans "Sitemap" %}</a></li>
+  <li><a href="http://europeana.eu/portal/termsofservice.html" class="">{% trans "Terms and conditions" %}</a></li>
+  <li><a href="http://europeana.eu/portal/privacy.html" class="">{% trans "Privacy" %}</a></li>
+  <li><a href="http://europeana.eu/portal/languagepolicy.html" class="">{% trans "Language policy" %}</a></li>
+  <li><a href="http://europeana.eu/portal/contact.html" class=""><span  class="fg-red">{% trans "Contacts | Send us feedback" %}</span></a></li>
+  <li class="signoff">{% trans "co-funded by the European Union" %}<img src="http://europeana.coreference.org:8080/europeana/site_media/eu-flag.gif" alt={% trans "icon-european union flag" %}/></li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>
+

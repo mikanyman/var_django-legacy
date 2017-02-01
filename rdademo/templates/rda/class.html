@@ -1,0 +1,264 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>RDA demo</title>
+  <!--<link href="http://a29.myrootshell.com:8080/rdademo/site_media/css/styles.css" rel="stylesheet" type="text/css" />-->
+<style type="text/css">
+html {
+	}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 12pt;
+	background-color: #F0F0F7;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-variant: small-caps;
+	color: #223388;
+	margin: 0;
+	}
+#wrapper {
+	}
+#sidebar-left {
+	width: 180px;
+	background-color: #F0F0F7;
+	float: left;
+	padding: 0px 42px 0px 30px;
+	}
+#sidebar-content {
+	padding-top: 10px;
+	}
+#main {
+	min-width: 800px;
+	display: block;
+	float: left;
+	}
+#main-content {
+	height: 100%;
+	padding: 30px 40px 20px 40px;
+	background-color: #FFFFFF;
+	}
+#navlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+#navlist li {
+    padding: 2px 0 2px 20px;
+    background: url(http://a29.myrootshell.com:8080/rdademo/site_media/img/menu-leaf.gif) no-repeat 5px .5em;
+	}
+.navlist_hea {
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+	}
+.navlist_hea_next {
+	margin-top: 10px;
+	padding: 0;
+	}
+a:active, a.active {
+	color: #5894BE;
+	}
+a:link, a:visited {
+	color: #027AC6;
+	text-decoration: none;
+	}
+.field_wrapper {
+	float: left;
+	clear:left;
+	width: auto;
+	margin: 4px 0 4px 0;
+	display: block;
+	}
+.field_label {
+	width: 340px;
+	height: 20px;
+	float: left;
+	}
+.field {
+	float: left;
+	}
+.authority {
+	float: left;
+	display: block;
+	width: 16.5px;
+	height: 16.5px;
+	border: solid 1px #027AC6;
+	background-color: #F0F0F7;
+	margin-left: 4px;
+	text-align: center;
+	color: #027AC6;
+	padding: 1px;
+	}
+.help_text {
+	float: left;
+	color: #666;
+	font-size: 0.8em;
+	padding: 3px 0px 3px 20px;
+	}
+.form-box {
+	width: auto;
+	margin: 0 0 20px 0;
+	}
+.form-box fieldset {
+	width: auto;
+	padding: 10px;
+	border: solid 1px #75abea;
+	overflow:hidden;
+	}
+.form-box legend {
+	color: #027AC6;
+	}
+
+/* tabs */
+ul.tabs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+		}
+ul.tabs li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	padding-top: 0;
+	background: url(http://a29.myrootshell.com:8080/rdademo/site_media/img/tab_right.png) no-repeat right top;
+	margin-right: 1px;
+	}
+ul.tabs li a {
+	display: block;
+	padding: 4px 10px;
+	color: #fff;
+	text-decoration: none;
+	background: url(http://a29.myrootshell.com:8080/rdademo/site_media/img/tab_left.png) no-repeat left top;
+	}
+ul.tabs li a:hover {
+	color: #ACC9EB;
+	}
+#title_box {
+	width: auto;
+	height: 24px;
+	margin-bottom: 15px;
+	}
+#class_name {
+	position: relative;
+	top: 4px;
+	float: left;
+	}
+#view_navi {
+	float: right;
+	}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+  	
+    <div id="sidebar-left">
+      <div id="sidebar-content">
+        <div id="navlist">
+
+		  <p><img src="http://a29.myrootshell.com:8080/rdademo/site_media/img/plainRDA_200x300.jpg"></p>
+		  
+          <div class="navlist_hea">FRBR Group #1</div>
+          <ul>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/work/attributes/add/">Work</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/expression/attributes/add/">Expression</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/manifestation/attributes/add/">Manifestation</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/item/attributes/add/">Item</a></li>
+          </ul>
+          <div class="navlist_hea_next">FRBR Group #2</div>
+          <ul>	
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/person/attributes/add/">Person</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/family/attributes/add/">Family</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/corporate_body/attributes/add/">Corporate Body</a></li>
+          </ul>
+          <div class="navlist_hea_next">FRBR Group #3</div>
+          <ul>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/concept/attributes/add/">Concept</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/object/attributes/add/">Object</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/event/attributes/add/">Event</a></li>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/place/attributes/add/">Place</a></li>
+          </ul>
+          <div class="navlist_hea_next">FRAD</div>
+          <ul>
+            <li><a href="http://a29.myrootshell.com/rdademo/rda/name/attributes/add/">Name</a></li>
+          </ul>
+
+		</div>
+      </div>
+    </div>
+	
+    <div id="main">
+      <div id="main-content">
+      	
+		<div id="title_box">
+          <div id="class_name">
+            <h1>{{ class_name }} | Attributes</h1>
+		  </div>
+		  <div id="view_navi">
+		    <ul class="tabs">
+              <li><a href="http://a29.myrootshell.com/rdademo/rda/work/attributes/add/">Attributes</a></li>
+              <li><a href="http://a29.myrootshell.com/rdademo/rda/work/attributes/add/">Relations</a></li>
+              <li><a href="http://a29.myrootshell.com/rdademo/rda/work/attributes/add/">Instances</a></li>
+            </ul>
+		  </div>
+		</div>
+		
+        <form method="post" action=".">{% csrf_token %}
+
+        {% ifnotequal core_form_len 0 %}
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+            {% for field in core_form %}
+            <div class="field_wrapper">
+              {{ field.errors }}
+              <div class="field_label">{{ field.label_tag }}</div><div class="field"> {{ field }}</div><!--<div class="authority">A</div>--><div class="help_text"> {{ field.help_text }}</div>
+              <div class="field_label"><label for="id_title">Title of the Work</label></div><div class="field"> <input id="id_title" type="text" name="title" maxlength="255" /></div><!--<div class="authority">A</div>--><div class="help_text"> FRBR 4.2.1 FRAD 5.2</div>
+            </div>
+
+            </div>
+            {% endfor %}
+          </fieldset>
+        </div>
+		{% endifnotequal %}
+
+        {% ifnotequal enh_form_len 0 %}
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+            {% for field in enh_form %}
+            <div class="field_wrapper">
+              {{ field.errors }}
+              <div class="field_label">{{ field.label_tag }}</div><div class="field"> {{ field }}</div><!--<div class="authority">A</div>--><div class="help_text"> {{ field.help_text }}</div>
+            </div>
+            {% endfor %}
+          </fieldset>
+        </div>
+		{% endifnotequal %}
+
+        {% ifnotequal spec_form_len 0 %}
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            {% for field in spec_form %}
+            <div class="field_wrapper">
+              {{ field.errors }}
+              <div class="field_label">{{ field.label_tag }}</div><div class="field"> {{ field }}</div><!--<div class="authority">A</div>--><div class="help_text"> {{ field.help_text }}</div>
+            </div>
+            {% endfor %}
+          </fieldset>
+        </div>
+		{% endifnotequal %}
+		
+		<p><input class="submit" type="submit" value="Send"></p>
+		
+      </div><!-- main -->
+    </div><!-- main-content -->
+	
+  </div><!-- wrapper -->
+</body>

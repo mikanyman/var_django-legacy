@@ -1,0 +1,42 @@
+# CORE
+date
+language_expression
+other
+identifier
+content_type 
+
+# ENHANCED
+credit
+duration
+language_content
+place_and_date_of_capture
+accessibility_content
+illustrative_content
+form_of_notation
+script
+form_of_tactile_notation
+summarization
+supplementary_content
+source_consulted
+status_of_identification
+cataloguers_note
+awards
+
+# SPECIAL
+aspect_ratio
+scale
+additional_scale_information
+format_of_notated_music
+sound_content
+performer_narrator_or_presenter
+medium_of_performance
+colour_content
+colour_content_of_resource_for_visual_impairments
+other_details
+projection
+#scale_of_still_image_or_three_dimensional_form
+#colour_of_three_dimensional_form
+#color_of_moving_image
+#colour_of_still_image
+#form_of_musical_notation
+#form_of_notated_movement

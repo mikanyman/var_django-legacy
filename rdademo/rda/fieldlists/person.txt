@@ -1,0 +1,27 @@
+# CORE
+name 
+fullername
+date
+title
+identifier 
+activity 
+profession 
+other 
+
+# ENHANCED
+biographical_information
+affiliation 
+place_of_birth 
+place_of_death 
+place_of_residence
+country_associated
+undifferentiated_name 
+address 
+note 
+source
+status_of_identification 
+cataloguers_note
+gender 
+language 
+
+# SPECIAL

@@ -1,0 +1,95 @@
+html, body {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+	}
+body {
+    background-image:url('http://cidoc.coreference.org:8080/coref/img/strip_7f9bb9.png');
+    background-repeat:repeat;
+	}
+	
+/* page structure */
+#wrap {
+	background-color: #fff;
+	border-left: 1px solid #BCD2E6;
+	border-right: 1px solid #BCD2E6;
+	border-bottom: 1px solid #BCD2E6;
+	color: #666;
+	margin: 0 auto;
+	min-height: 600px;
+	width: 980px;
+	}
+#topbanner {
+	padding: 4px 0px 0px 0px;
+	background:#F4F7FB;
+	}
+#content {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 12pt;
+	min-height: 400px;
+	padding: 50px 20px 20px 20px;
+	color: #036;
+	}
+#col_1 {
+	width: 300px
+}
+#col_2 {
+	float: right;
+	width: 560px;
+	margin-right: 100px;
+}
+/* Menu Tabs 1 */
+#topnavi {
+	float:left;
+	width:100%;
+	background:#F4F7FB;
+	font: bold 11px/1.5em Verdana;
+	line-height:normal;
+	border-bottom:1px solid #BCD2E6;
+	}
+#topnavi ul {
+	margin:0;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	}
+#topnavi li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #topnavi a {
+      float:left;
+      background:url("http://synapse.coreference.org:8080/coref/img/tableft1.gif") no-repeat left top;
+      margin:0;
+      padding:0 0 0 4px;
+      text-decoration:none;
+      }
+#topnavi a span {
+	float:left;
+	display:block;
+	background:url("http://synapse.coreference.org:8080/coref/img/tabright1.gif") no-repeat right top;
+	padding:5px 15px 4px 6px;
+	color:#627EB7; /* 627EB7 */
+	text-align: center;
+	width: 70px;
+	}
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #topnavi a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabs a:hover span {
+      color:#627EB7;
+      }
+    #topnavi a:hover {
+      background-position:0% -42px;
+      }
+    #topnavi a:hover span {
+      background-position:100% -42px;
+      }
+
+      #topnavi #current a {
+              background-position:0% -42px;
+      }
+      #topnavi #current a span {
+              background-position:100% -42px;
+      }

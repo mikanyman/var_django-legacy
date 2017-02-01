@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.cfg
+example_project/__init__.py
+example_project/manage.py
+example_project/settings.py
+example_project/urls.py
+livevalidation/__init__.py
+livevalidation/models.py
+livevalidation/settings.py
+livevalidation/tests.py
+livevalidation/validator.py
+livevalidation/templatetags/__init__.py
+livevalidation/templatetags/live_validation.py
+pip-egg-info/django_livevalidation.egg-info/PKG-INFO
+pip-egg-info/django_livevalidation.egg-info/SOURCES.txt
+pip-egg-info/django_livevalidation.egg-info/dependency_links.txt
+pip-egg-info/django_livevalidation.egg-info/top_level.txt

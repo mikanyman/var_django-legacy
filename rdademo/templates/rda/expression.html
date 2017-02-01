@@ -1,0 +1,151 @@
+{% extends "rda/base.html" %}
+
+{% block form_fields %}
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+            <div class="field_wrapper">
+              {{ form.date.errors }}
+              <div class="field_label">{{ form.date.label_tag }}</div><div class="field"> {{ form.date }}</div><div class="help_text"> {{ form.date.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.language_expression.errors }}
+			  <div class="field_label">{{ form.language_expression.label_tag }}</div><div class="field"> {{ form.language_expression }}</div><div class="help_text"> {{ form.language_expression.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.other.errors }}
+			  <div class="field_label">{{ form.other.label_tag }}</div><div class="field"> {{ form.other }}</div><div class="help_text"> {{ form.other.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.identifier.errors }}			
+			  <div class="field_label">{{ form.identifier.label_tag }}</div><div class="field"> {{ form.identifier }}</div><div class="help_text"> {{ form.identifier.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.content_type.errors }}			
+			  <div class="field_label">{{ form.content_type.label_tag }}</div><div class="field"> {{ form.content_type  }}</div><div class="help_text"> {{ form.content_type.help_text }}</div>
+			</div>
+		  </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+            <div class="field_wrapper">
+              {{ form.credit.errors }}
+              <div class="field_label">{{ form.credit.label_tag }}</div><div class="field"> {{ form.credit }}</div><div class="help_text"> {{ form.credit.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.duration.errors }}			
+			  <div class="field_label">{{ form.duration.label_tag }}</div><div class="field"> {{ form.duration }}</div><div class="help_text"> {{ form.duration.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.language_content.errors }}			
+			  <div class="field_label">{{ form.language_content.label_tag }}</div><div class="field"> {{ form.language_content }}</div><div class="help_text"> {{ form.language_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.place_and_date_of_capture.errors }}			
+			  <div class="field_label">{{ form.place_and_date_of_capture.label_tag }}</div><div class="field"> {{ form.place_and_date_of_capture }}</div><div class="help_text"> {{ form.place_and_date_of_capture.help_text }}</div>
+            </div>
+            <div class="field_wrapper">
+              {{ form.accessibility_content.errors }}			
+			  <div class="field_label">{{ form.accessibility_content.label_tag }}</div><div class="field"> {{ form.accessibility_content }}</div><div class="help_text"> {{ form.accessibility_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.illustrative_content.errors }}			
+			  <div class="field_label">{{ form.illustrative_content.label_tag }}</div><div class="field"> {{ form.illustrative_content }}</div><div class="help_text"> {{ form.illustrative_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.form_of_notation.errors }}			
+			  <div class="field_label">{{ form.form_of_notation.label_tag }}</div><div class="field"> {{ form.form_of_notation }}</div><div class="help_text"> {{ form.form_of_notation.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.script.errors }}			
+			  <div class="field_label">{{ form.script.label_tag }}</div><div class="field"> {{ form.script }}</div><div class="help_text"> {{ form.script.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.form_of_tactile_notation.errors }}  
+			  <div class="field_label">{{ form.form_of_tactile_notation.label_tag }}</div><div class="field"> {{ form.form_of_tactile_notation }}</div><div class="help_text"> {{ form.form_of_tactile_notation.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.summarization.errors }}
+			  <div class="field_label">{{ form.summarization.label_tag }}</div><div class="field"> {{ form.summarization }}</div><div class="help_text"> {{ form.summarization.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.supplementary_content.errors }}			
+			  <div class="field_label">{{ form.supplementary_content.label_tag }}</div><div class="field"> {{ form.supplementary_content }}</div><div class="help_text"> {{ form.supplementary_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.form_of_tactile_notation.errors }}
+			  <div class="field_label">{{ form.form_of_tactile_notation.label_tag }}</div><div class="field"> {{ form.form_of_tactile_notation }}</div><div class="help_text"> {{ form.form_of_tactile_notation.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.source_consulted.errors }}			
+			  <div class="field_label">{{ form.source_consulted.label_tag }}</div><div class="field"> {{ form.source_consulted }}</div><div class="help_text"> {{ form.source_consulted.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.status_of_identification.errors }}			
+			  <div class="field_label">{{ form.status_of_identification.label_tag }}</div><div class="field"> {{ form.status_of_identification }}</div><div class="help_text"> {{ form.status_of_identification.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+              {{ form.cataloguers_note.errors }}			
+			  <div class="field_label">{{ form.cataloguers_note.label_tag }}</div><div class="field"> {{ form.cataloguers_note }}</div><div class="help_text"> {{ form.cataloguers_note.help_text }}</div>
+			</div> 
+			<div class="field_wrapper">
+              {{ form.awards.errors }}
+			  <div class="field_label">{{ form.awards.label_tag }}</div><div class="field"> {{ form.awards }}</div><div class="help_text"> {{ form.awards.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            <div class="field_wrapper">
+              {{ form.aspect_ratio.errors }}
+              <div class="field_label">{{ form.aspect_ratio.label_tag }}</div><div class="field"> {{ form.aspect_ratio }}</div><div class="help_text"> {{ form.aspect_ratio.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.scale.errors }}			
+			  <div class="field_label">{{ form.scale.label_tag }}</div><div class="field"> {{ form.scale }}</div><div class="help_text"> {{ form.scale.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.additional_scale_information.errors }}			
+			  <div class="field_label">{{ form.additional_scale_information.label_tag }}</div><div class="field"> {{ form.additional_scale_information }}</div><div class="help_text"> {{ form.additional_scale_information.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.format_of_notated_music.errors }}			
+			  <div class="field_label">{{ form.format_of_notated_music.label_tag }}</div><div class="field"> {{ form.format_of_notated_music }}</div><div class="help_text"> {{ form.format_of_notated_music.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.sound_content.errors }}			
+			  <div class="field_label">{{ form.sound_content.label_tag }}</div><div class="field"> {{ form.sound_content }}</div><div class="help_text"> {{ form.sound_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.performer_narrator_or_presenter.errors }}			
+			  <div class="field_label">{{ form.performer_narrator_or_presenter.label_tag }}</div><div class="field"> {{ form.performer_narrator_or_presenter }}</div><div class="help_text"> {{ form.performer_narrator_or_presenter.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.medium_of_performance.errors }}			
+			  <div class="field_label">{{ form.medium_of_performance.label_tag }}</div><div class="field"> {{ form.medium_of_performance }}</div><div class="help_text"> {{ form.medium_of_performance.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.colour_content.errors }}			
+			  <div class="field_label">{{ form.colour_content.label_tag }}</div><div class="field"> {{ form.colour_content }}</div><div class="help_text"> {{ form.colour_content.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.colour_content_of_resource_for_visual_impairments.errors }}			
+			  <div class="field_label">{{ form.colour_content_of_resource_for_visual_impairments.label_tag }}</div><div class="field"> {{ form.colour_content_of_resource_for_visual_impairments }}</div><div class="help_text"> {{ form.colour_content_of_resource_for_visual_impairments.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.other_details.errors }}			
+			  <div class="field_label">{{ form.other_details.label_tag }}</div><div class="field"> {{ form.other_details }}</div><div class="help_text"> {{ form.other_details.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.projection.errors }}			
+			  <div class="field_label">{{ form.projection.label_tag }}</div><div class="field"> {{ form.projection }}</div><div class="help_text"> {{ form.projection.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+{% endblock%}

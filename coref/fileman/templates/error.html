@@ -1,0 +1,20 @@
+{% load i18n %}
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<title>{% trans "Ooops! Error!" %}</title>
+<link rel='stylesheet' href='/fm/media/style.css' type='text/css'>
+</head>
+
+<body>
+
+<div style="margin:20px;">
+    <p class="errornote">
+    {% for error in msg %}
+    {{ error }}
+    {% endfor %}
+    </p>
+</div>
+
+</body>
+</html>

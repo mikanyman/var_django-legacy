@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="wievport" content="initial-scale=1.0, user-scalable=no" />
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+  <script>
+    var map;
+    var marker;
+    var waypointByID = {};
+    var routePath = [];
+    
+    function initialize() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 5,
+				center: new google.maps.LatLng(65.379535, 21.0),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+
+			<!-- Create waypoint marker overlay //-->
+			{% for waypoint in waypoints %}
+				waypointByID[{{waypoint.id}}] = {
+				name: "{{waypoint.name}}",
+				lat: {{waypoint.geometry.y}},
+				lng: {{waypoint.geometry.x}}
+				};
+			{% endfor %}
+			var i = 0;
+			$('.waypoint').each(function () {
+				var waypoint = waypointByID[this.id];
+				var markerLatLng = new google.maps.LatLng(waypoint.lat, waypoint.lng);
+				routePath[i] = markerLatLng;
+				marker = new google.maps.Marker({map: map, position: markerLatLng});
+				i++;
+				$(this).click(function() {
+					var center = new google.maps.LatLng(waypoint.lat, waypoint.lng);
+					map.panTo(center);
+					map.setZoom(11);
+				}).hover(
+                function () {this.className = this.className.replace('OFF', 'ON');},
+                function () {this.className = this.className.replace('ON', 'OFF');}
+            );
+
+			});
+
+			<!-- Create path between each waypoint //-->
+			var line = new google.maps.Polyline({
+				path: routePath,
+				strokeColor: "#FF0000",
+				strokeOpacity: 1.0,
+				strokeWeight: 2
+			});
+			//line.setMap(map);
+	}
+		
+	$(document).ready(function () {
+		$('#saveMatkain').click(function () {
+			
+		});
+	});
+  </script>
+  <style>
+    body {font-family: sans-serif}
+    #map {width: 800px; height: 600px}
+  </style>
+  <style>
+    #waypoints {overflow: auto; width: 800px; height: 100px}
+    .linkOFF {color: darkblue}
+    .linkON {color: white; background-color: darkblue}
+  </style>
+</head>
+<body onload='initialize()'>
+  <div id=map></div>
+  <div id=waypoints>
+    {{content}}
+  </div>
+  <input id=saveMatkain type=button value="Tallenna matkain" disabled=disabled>
+</body>
+</html>

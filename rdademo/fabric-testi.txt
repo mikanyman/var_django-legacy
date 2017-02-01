@@ -1,0 +1,12 @@
+total 40
+drwxr-xr-x 3 root root 4096 2011-06-08 02:35 apache
+-rw-r--r-- 1 root root    0 2011-07-13 08:28 fabric-testi.txt
+-rwxr-xr-x 1 root root    0 2011-06-08 02:30 __init__.py
+-rw-r--r-- 1 root root  129 2011-06-17 01:02 __init__.pyc
+-rwxr-xr-x 1 root root  529 2011-06-17 01:00 manage.py
+drwxr-xr-x 5 root root 4096 2011-07-11 00:49 rda
+-rwxr-xr-x 1 root root 4723 2011-06-25 15:15 settings.py
+-rw-r--r-- 1 root root 2903 2011-06-21 20:16 settings.pyc
+drwxr-xr-x 5 root root 4096 2011-06-25 16:42 site_media
+drwxr-xr-x 4 root root 4096 2011-06-21 20:24 templates
+-rwxr-xr-x 1 root root  269 2011-06-21 20:24 urls.py

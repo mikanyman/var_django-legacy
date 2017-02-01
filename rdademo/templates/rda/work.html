@@ -1,0 +1,140 @@
+{% extends "rda/base.html" %}
+
+{% block form_fields %}
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+            <div class="field_wrapper">
+              {{ form.title.errors }}
+              <div class="field_label">{{ form.title.label_tag }}</div><div class="field"> {{ form.title }}</div><div class="help_text"> {{ form.title.help_text }}</div>
+            </div>
+            <div class="field_wrapper">
+              {{ form.date.errors }}
+              <div class="field_label">{{ form.date.label_tag }}</div><div class="field"> {{ form.date }}</div><div class="help_text"> {{ form.date.help_text }}</div>
+            </div>
+            <div class="field_wrapper">
+              {{ form.origin.errors }}
+              <div class="field_label">{{ form.origin.label_tag }}</div><div class="field"> {{ form.origin }}</div><div class="help_text"> {{ form.origin.help_text }}</div>
+            </div>
+            <div class="field_wrapper">
+              {{ form.form.errors }}
+              <div class="field_label">{{ form.form.label_tag }}</div><div class="field"> {{ form.form }}</div><div class="help_text"> {{ form.form.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.other.errors }}
+              <div class="field_label">{{ form.other.label_tag }}</div><div class="field"> {{ form.other }}</div><div class="help_text"> {{ form.other.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.identifier.errors }}
+              <div class="field_label">{{ form.identifier.label_tag }}</div><div class="field"> {{ form.identifier }}</div><div class="help_text"> {{ form.identifier.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.signatory.errors }}
+              <div class="field_label">{{ form.signatory.label_tag }}</div><div class="field"> {{ form.signatory }}</div><div class="help_text"> {{ form.signatory.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.key.errors }}
+              <div class="field_label">{{ form.key.label_tag }}</div><div class="field"> {{ form.key }}</div><div class="help_text"> {{ form.key.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.designation.errors }}
+              <div class="field_label">{{ form.designation.label_tag }}</div><div class="field"> {{ form.designation }}</div><div class="help_text"> {{ form.designation.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+            <div class="field_wrapper">
+              {{ form.nature.errors }}
+              <div class="field_label">{{ form.nature.label_tag }}</div><div class="field"> {{ form.nature }}</div><div class="help_text"> {{ form.nature.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.coverage.errors }}
+              <div class="field_label">{{ form.coverage.label_tag }}</div><div class="field"> {{ form.coverage }}</div><div class="help_text"> {{ form.coverage.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.organization.errors }}
+              <div class="field_label">{{ form.organization.label_tag }}</div><div class="field"> {{ form.organization }}</div><div class="help_text"> {{ form.organization.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.audience.errors }}
+              <div class="field_label">{{ form.audience.label_tag }}</div><div class="field"> {{ form.audience }}</div><div class="help_text"> {{ form.audience.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.audience.errors }}
+              <div class="field_label">{{ form.history.label_tag }}</div><div class="field"> {{ form.history }}</div><div class="help_text"> {{ form.history.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.epoch.errors }}
+              <div class="field_label">{{ form.epoch.label_tag }}</div><div class="field"> {{ form.epoch }}</div><div class="help_text"> {{ form.epoch.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.source.errors }}
+              <div class="field_label">{{ form.source.label_tag }}</div><div class="field"> {{ form.source }}</div><div class="help_text"> {{ form.source.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.status.errors }}
+              <div class="field_label">{{ form.status.label_tag }}</div><div class="field"> {{ form.status }}</div><div class="help_text"> {{ form.status.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.cataloguers_note.errors }}
+              <div class="field_label">{{ form.cataloguers_note.label_tag }}</div><div class="field"> {{ form.cataloguers_note }}</div><div class="help_text"> {{ form.cataloguers_note.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.status_of_id.errors }}
+              <div class="field_label">{{ form.status_of_id.label_tag }}</div><div class="field"> {{ form.status_of_id }}</div><div class="help_text"> {{ form.status_of_id.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            <div class="field_wrapper">
+              {{ form.academic_degree.errors }}
+              <div class="field_label">{{ form.academic_degree.label_tag }}</div><div class="field"> {{ form.academic_degree }}</div><div class="help_text"> {{ form.academic_degree.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.granting_institution.errors }}
+              <div class="field_label">{{ form.granting_institution.label_tag }}</div><div class="field"> {{ form.granting_institution }}</div><div class="help_text"> {{ form.granting_institution.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.year_granted.errors }}
+              <div class="field_label">{{ form.year_granted.label_tag }}</div><div class="field"> {{ form.year_granted }}</div><div class="help_text"> {{ form.year_granted.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.longitude.errors }}
+              <div class="field_label">{{ form.longitude.label_tag }}</div><div class="field"> {{ form.longitude }}</div><div class="help_text"> {{ form.longitude.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.latitude.errors }}
+              <div class="field_label">{{ form.latitude.label_tag }}</div><div class="field"> {{ form.latitude }}</div><div class="help_text"> {{ form.latitude.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.coord_pairs.errors }}
+              <div class="field_label">{{ form.coord_pairs.label_tag }}</div><div class="field"> {{ form.coord_pairs }}</div><div class="help_text"> {{ form.coord_pairs.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.right_asc_decl.errors }}
+              <div class="field_label">{{ form.right_asc_decl.label_tag }}</div><div class="field"> {{ form.right_asc_decl }}</div><div class="help_text"> {{ form.right_asc_decl.help_text }}</div>
+			</div>
+            <div class="field_wrapper">
+              {{ form.equinox.errors }}
+              <div class="field_label">{{ form.equinox.label_tag }}</div><div class="field"> {{ form.equinox }}</div><div class="help_text"> {{ form.equinox.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+{% endblock%}
+
+{% block relations %}
+<b>{{ object.title }}</b>
+<br/><br/>
+<i>Authors</i>
+{% for creator in object.creator_person.all %}
+<p>{{ creator }}</p>
+{% endfor %}
+{% endblock %}

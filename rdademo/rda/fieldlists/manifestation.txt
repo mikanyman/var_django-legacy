@@ -1,0 +1,45 @@
+# CORE 
+title 
+date 
+carrier_type 
+extent
+num_of_serials
+identifier
+statement_responsibility
+statement_series
+statement_edition 
+statement_publication
+statement_manufacture
+statement_distribution
+	
+# ENHANCED
+mediatype 
+dimensions
+resource_locator
+citation 
+note 
+production_statement 
+restrictions_on_access
+restrictions_on_use 
+contact
+terms
+	
+# SPECIAL
+mode
+frequency
+format
+font_size
+reduction_ratio
+polarity
+mount
+production_method
+layout
+base_material
+applied_material
+projection_characteristic
+generation
+video_characteristic
+digitalfile_characteristic
+sound_characteristic
+sound_content
+equipment

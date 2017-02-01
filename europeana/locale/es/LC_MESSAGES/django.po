@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-20 22:53+0200\n"
+"PO-Revision-Date: 2010-01-21 01:49+0200\n"
+"Last-Translator: Mika Nyman <info@synapse-computing.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\flatpages\about.html.py:35
+msgid "we are in beta!!!"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:50
+msgid "My Europeana"
+msgstr "Mi Europeana"
+
+#: .\templates\flatpages\about.html.py:51
+msgid "Communities"
+msgstr "Mi Europeana"
+
+#: .\templates\flatpages\about.html.py:52
+msgid "Partners"
+msgstr "Miembros"
+
+#: .\templates\flatpages\about.html.py:53
+msgid "Timeline (beta)"
+msgstr "Cronología (beta)"
+
+#: .\templates\flatpages\about.html.py:54
+msgid "Thought lab"
+msgstr "Laboratorio de ideas"
+
+#: .\templates\flatpages\about.html.py:57
+msgid "Choose a language"
+msgstr "Seleccione un idioma"
+
+#: .\templates\flatpages\about.html.py:99
+#: .\templates\flatpages\about.html.py:114
+msgid "About us"
+msgstr "Quiénes somos"
+
+#: .\templates\flatpages\about.html.py:101
+msgid "Storyline and Credits"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:107
+msgid "Click here to return to the Europeana homepage"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:107
+msgid "logo Europeana think culture"
+msgstr ""
+
+#: .\templates\flatpages\about.html.py:115
+msgid "Using Europeana"
+msgstr "Cómo utilizar Europeana"
+
+#: .\templates\flatpages\about.html.py:116
+msgid "Accessibility"
+msgstr "Accesibilidad"
+
+#: .\templates\flatpages\about.html.py:117
+msgid "Sitemap"
+msgstr "Mapa del sitio"
+
+#: .\templates\flatpages\about.html.py:118
+msgid "Terms and conditions"
+msgstr "Privacidad"
+
+#: .\templates\flatpages\about.html.py:119
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: .\templates\flatpages\about.html.py:120
+msgid "Language policy"
+msgstr "Política lingüística"
+
+#: .\templates\flatpages\about.html.py:121
+msgid "Contacts | Send us feedback"
+msgstr "Contactos | Envíenos sus sugerencias"
+
+#: .\templates\flatpages\about.html.py:122
+msgid "co-funded by the European Union"
+msgstr "cofinanciado por la Unión Europea"
+
+#: .\templates\flatpages\about.html.py:122
+msgid "icon-european union flag"
+msgstr ""
+

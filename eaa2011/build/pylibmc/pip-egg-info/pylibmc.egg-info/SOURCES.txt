@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST
+MANIFEST.in
+README.rst
+_pylibmcmodule.c
+_pylibmcmodule.h
+pooling.rst
+pylibmc-version.h
+pylibmc.py
+setup.py
+tests.py
+pip-egg-info/pylibmc.egg-info/PKG-INFO
+pip-egg-info/pylibmc.egg-info/SOURCES.txt
+pip-egg-info/pylibmc.egg-info/dependency_links.txt
+pip-egg-info/pylibmc.egg-info/top_level.txt

@@ -1,0 +1,183 @@
+{% extends "rda/base.html" %}
+
+{% block form_fields %}
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+            <div class="field_wrapper">
+              {{ form.title.errors }}
+              <div class="field_label">{{ form.title.label_tag }}</div><div class="field"> {{ form.title }}</div><div class="help_text"> {{ form.title.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.date.errors }}
+			  <div class="field_label">{{ form.date.label_tag }}</div><div class="field"> {{ form.date }}</div><div class="help_text"> {{ form.date.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.carrier_type.errors }}
+			  <div class="field_label">{{ form.carrier_type.label_tag }}</div><div class="field"> {{ form.carrier_type }}</div><div class="help_text"> {{ form.carrier_type.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.extent.errors }}
+			  <div class="field_label">{{ form.extent.label_tag }}</div><div class="field"> {{ form.extent }}</div><div class="help_text"> {{ form.extent.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.num_of_serials.errors }}
+			  <div class="field_label">{{ form.num_of_serials.label_tag }}</div><div class="field"> {{ form.num_of_serials }}</div><div class="help_text"> {{ form.num_of_serials.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.identifier.errors }}
+			  <div class="field_label">{{ form.identifier.label_tag }}</div><div class="field"> {{ form.identifier }}</div><div class="help_text"> {{ form.identifier.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_responsibility.errors }}
+			  <div class="field_label">{{ form.statement_responsibility.label_tag }}</div><div class="field"> {{ form.statement_responsibility }}</div><div class="help_text"> {{ form.statement_responsibility.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_series.errors }}
+			  <div class="field_label">{{ form.statement_series.label_tag }}</div><div class="field"> {{ form.statement_series }}</div><div class="help_text"> {{ form.statement_series.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_edition.errors }}
+			  <div class="field_label">{{ form.statement_edition.label_tag }}</div><div class="field"> {{ form.statement_edition  }}</div><div class="help_text"> {{ form.statement_edition.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_publication.errors }}
+			  <div class="field_label">{{ form.statement_publication.label_tag }}</div><div class="field"> {{ form.statement_publication }}</div><div class="help_text"> {{ form.statement_publication.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_manufacture.errors }}
+			  <div class="field_label">{{ form.statement_manufacture.label_tag }}</div><div class="field"> {{ form.statement_manufacture  }}</div><div class="help_text"> {{ form.statement_manufacture.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.statement_distribution.errors }}
+			  <div class="field_label">{{ form.statement_distribution.label_tag }}</div><div class="field"> {{ form.statement_distribution }}</div><div class="help_text"> {{ form.statement_distribution.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+            <div class="field_wrapper">
+              {{ form.mediatype.errors }}
+              <div class="field_label">{{ form.mediatype.label_tag }}</div><div class="field"> {{ form.mediatype }}</div><div class="help_text"> {{ form.mediatype.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.dimensions.errors }}
+			  <div class="field_label">{{ form.dimensions.label_tag }}</div><div class="field"> {{ form.dimensions }}</div><div class="help_text"> {{ form.dimensions.help_text }}</div>
+            </div>
+            <div class="field_wrapper">		
+              {{ form.resource_locator.errors }}			
+			  <div class="field_label">{{ form.resource_locator.label_tag }}</div><div class="field"> {{ form.resource_locator }}</div><div class="help_text"> {{ form.resource_locator.help_text }}</div>
+            </div>
+            <div class="field_wrapper">		
+              {{ form.citation.errors }}			
+			  <div class="field_label">{{ form.citation.label_tag }}</div><div class="field"> {{ form.citation }}</div><div class="help_text"> {{ form.citation.help_text }}</div>
+            </div> 
+            <div class="field_wrapper">	
+              {{ form.note.errors }}  			
+			  <div class="field_label">{{ form.note.label_tag }}</div><div class="field"> {{ form.note }}</div><div class="help_text"> {{ form.note.help_text }}</div>
+            </div> 
+			<div class="field_wrapper">	
+			  {{ form.production_statement.errors }}
+			  <div class="field_label">{{ form.production_statement.label_tag }}</div><div class="field"> {{ form.production_statement }}</div><div class="help_text"> {{ form.production_statement.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+			  {{ form.restrictions_on_access.errors }}
+			  <div class="field_label">{{ form.restrictions_on_access.label_tag }}</div><div class="field"> {{ form.restrictions_on_access }}</div><div class="help_text"> {{ form.restrictions_on_access.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.restrictions_on_use.errors }}
+			  <div class="field_label">{{ form.restrictions_on_use.label_tag }}</div><div class="field"> {{ form.restrictions_on_use  }}</div><div class="help_text"> {{ form.restrictions_on_use.help_text }}</div>
+            </div> 
+			<div class="field_wrapper">
+			  {{ form.contact.errors }}
+			  <div class="field_label">{{ form.contact.label_tag }}</div><div class="field"> {{ form.contact }}</div><div class="help_text"> {{ form.contact.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.terms.errors }}
+			  <div class="field_label">{{ form.terms.label_tag }}</div><div class="field"> {{ form.terms }}</div><div class="help_text"> {{ form.terms.help_text }}</div>
+			</div>
+		 </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            <div class="field_wrapper">
+              {{ form.mode.errors }}
+              <div class="field_label">{{ form.mode.label_tag }}</div><div class="field"> {{ form.mode }}</div><div class="help_text"> {{ form.mode.help_text }}</div>
+            </div> 	
+		    <div class="field_wrapper">	
+			  {{ form.frequency.errors }}
+			  <div class="field_label">{{ form.frequency.label_tag }}</div><div class="field"> {{ form.frequency }}</div><div class="help_text"> {{ form.frequency.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+			  {{ form.format.errors }}
+			  <div class="field_label">{{ form.format.label_tag }}</div><div class="field"> {{ form.format }}</div><div class="help_text"> {{ form.format.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+			  {{ form.font_size.errors }}
+			  <div class="field_label">{{ form.font_size.label_tag }}</div><div class="field"> {{ form.font_size }}</div><div class="help_text"> {{ form.font_size.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+			  {{ form.reduction_ratio.errors }}
+			  <div class="field_label">{{ form.reduction_ratio.label_tag }}</div><div class="field"> {{ form.reduction_ratio }}</div><div class="help_text"> {{ form.reduction_ratio.help_text }}</div>
+            </div> 
+			<div class="field_wrapper">
+			  {{ form.polarity.errors }}
+			  <div class="field_label">{{ form.polarity.label_tag }}</div><div class="field"> {{ form.polarity }}</div><div class="help_text"> {{ form.polarity.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+			  {{ form.mount.errors }}
+			  <div class="field_label">{{ form.mount.label_tag }}</div><div class="field"> {{ form.mount }}</div><div class="help_text"> {{ form.mount.help_text }}</div>
+			</div>  
+			<div class="field_wrapper">
+			  {{ form.production_method.errors }}
+			  <div class="field_label">{{ form.production_method.label_tag }}</div><div class="field"> {{ form.production_method }}</div><div class="help_text"> {{ form.production_method.help_text }}</div>
+			</div>  
+			<div class="field_wrapper">
+			  {{ form.layout.errors }}
+			  <div class="field_label">{{ form.layout.label_tag }}</div><div class="field"> {{ form.layout }}</div><div class="help_text"> {{ form.layout.help_text }}</div>
+			</div>  
+			<div class="field_wrapper">
+			  {{ form.base_material.errors }}
+			  <div class="field_label">{{ form.base_material.label_tag }}</div><div class="field"> {{ form.base_material }}</div><div class="help_text"> {{ form.layout.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.applied_material.errors }}
+			  <div class="field_label">{{ form.applied_material.label_tag }}</div><div class="field"> {{ form.applied_material }}</div><div class="help_text"> {{ form.applied_material.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.projection_characteristic.errors }}
+			  <div class="field_label">{{ form.projection_characteristic.label_tag }}</div><div class="field"> {{ form.projection_characteristic }}</div><div class="help_text"> {{ form.projection_characteristic.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.generation.errors }}
+			  <div class="field_label">{{ form.generation.label_tag }}</div><div class="field"> {{ form.generation }}</div><div class="help_text"> {{ form.generation.help_text }}</div>
+			</div>  
+			<div class="field_wrapper">
+			  {{ form.video_characteristic.errors }}
+			  <div class="field_label">{{ form.video_characteristic.label_tag }}</div><div class="field"> {{ form.video_characteristic }}</div><div class="help_text"> {{ form.video_characteristic.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.digitalfile_characteristic.errors }}
+			  <div class="field_label">{{ form.digitalfile_characteristic.label_tag }}</div><div class="field"> {{ form.digitalfile_characteristic }}</div><div class="help_text"> {{ form.digitalfile_characteristic.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.sound_characteristic.errors }}
+			  <div class="field_label">{{ form.sound_characteristic.label_tag }}</div><div class="field"> {{ form.sound_characteristic }}</div><div class="help_text"> {{ form.sound_characteristic.help_text }}</div>
+			</div>
+			<div class="field_wrapper">
+			  {{ form.sound_content.errors }}
+			  <div class="field_label">{{ form.sound_content.label_tag }}</div><div class="field"> {{ form.sound_content }}</div><div class="help_text"> {{ form.sound_content.help_text }}</div>
+			</div>  
+			<div class="field_wrapper">
+			{{ form.equipment.errors }}
+			  <div class="field_label">{{ form.equipment.label_tag }}</div><div class="field"> {{ form.equipment }}</div><div class="help_text"> {{ form.equipment.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+{% endblock%}

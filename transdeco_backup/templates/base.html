@@ -1,0 +1,30 @@
+{% load view_count_for_url %}
+{% view_count_for_url "/" as count %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>{{ site.0.title }}</title>
+  <link href="/site_media/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="{{ pg }}" onLoad="rollover()">
+<div id="wrap">
+
+  <div id="topbanner">{{ count }}</div>
+
+  <div id="topnavi">
+  	<div id="topnavi_left"></div>
+    <ul>
+      <li><a href="/" id="aloitusLink">ALOITUSSIVU</a></li>
+      <li><a href="/taiteilijat/gullichsen/" id="taiteilijatLink">TAITEILIJAT</a></li>
+      <li><a href="/yhteys/" id="yhteysLink">YHTEYDENOTOT</a></li>
+      <li><a href="/tilaus/" id="tilausLink">TILAAMINEN</a></li>
+    </ul>
+  </div>
+
+ {% block content %}{% endblock %}
+  
+</div>
+</body>
+</html>

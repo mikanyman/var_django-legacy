@@ -1,0 +1,106 @@
+## WORK ##
+# CORE
+{'Work':'title'}
+{'Work':'preferred_title'}
+{'Work':'variant_title'}
+{'Work':'date'}
+{'Work':'origin'}
+{'Work':'form'}
+{'Work':'other'}
+{'Work':'identifier'}
+{'Work':'medium'}
+{'Work':'signatory'}
+{'Work':'key'}
+{'Work':'designation'}
+{'Work':'medium_of_performance'}
+    
+# ENHANCED
+{'Work':'nature'}
+{'Work':'coverage'}
+{'Work':'organization'}
+{'Work':'audience'}
+{'Work':'history'}
+{'Work':'epoch'}
+{'Work':'source'}
+{'Work':'status'}
+{'Work':'cataloguersNote'}
+{'Work':'status_of_id'}
+
+# SPECIAL
+{'Work':'academic_degree'}
+{'Work':'granting_institution'}
+{'Work':'year_granted'}
+{'Work':'longitude'}
+{'Work':'latitude'}
+{'Work':'coord_pairs'}
+{'Work':'right_asc_decl'}
+{'Work':'equinox'}
+
+## EXPRESSION ##
+# CORE
+{'Expression':'date'}
+{'Expression':'language_expression'}
+{'Expression':'other'}
+{'Expression':'identifier'}
+{'Expression':'content_type'}
+
+# ENHANCED
+{'Expression':'credit'}
+{'Expression':'duration'}
+{'Expression':'language_content'}
+{'Expression':'place_and_date_of_capture'}
+{'Expression':'accessibility_content'}
+{'Expression':'illustrative_content'}
+{'Expression':'form_of_notation'}
+{'Expression':'script'}
+{'Expression':'form_of_tactile_notation'}
+{'Expression':'summarization'}
+{'Expression':'supplementary_content'}
+{'Expression':'source_consulted'}
+{'Expression':'status_of_identification'}
+{'Expression':'note'}
+{'Expression':'awards'}
+
+# SPECIAL
+{'Expression':'aspect_ratio'}
+{'Expression':'scale'}
+{'Expression':'additional_scale_information'}
+{'Expression':'scale_of_still_image_or_three_dimensional_form'}
+{'Expression':'format_of_notated_music'}
+{'Expression':'sound_content, performer_narrator_or_presenter'}
+{'Expression':'medium_of_performance'}
+{'Expression':'colour_content'}
+{'Expression':'colour_content_of_resource_for_visual_impairments'}
+{'Expression':'colour_of_three_dimensional_form'}
+{'Expression':'color_of_moving_image'}
+{'Expression':'colour_of_still_image'}
+{'Expression':'other_details, projection'}
+{'Expression':'form_of_musical_notation'}
+{'Expression':'form_of_notated_movement'}
+
+## Manifestation
+# CORE
+{'Manifestation':'title '}
+{'Manifestation':date'}
+{'Manifestation':carrierType'} 
+{'Manifestation':extent'}
+{'Manifestation':numOfSerials'}
+{'Manifestation':identifier'}
+{'Manifestation':statementResponsibility'}
+{'Manifestation':statementSeries'}
+{'Manifestation':statementEdition'}
+{'Manifestation':statementPublication'}
+{'Manifestation':statementManufacture'}
+{'Manifestation':statementDistribution'}
+	
+# ENHANCED
+{'Manifestation':mediatype'}
+{'Manifestation':dimensions'}
+{'Manifestation':resourceLocator'}
+{'Manifestation':citation'}
+{'Manifestation':note'}
+{'Manifestation':productionStatement'} 
+{'Manifestation':restrictionsOnAccess'}
+{'Manifestation':restrictionsOnUse'}
+{'Manifestation':contact'}
+{'Manifestation':terms'}

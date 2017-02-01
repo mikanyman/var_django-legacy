@@ -1,0 +1,210 @@
+body
+    {
+    background-color: #ddddbb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    }
+		
+table
+	{
+	border-collapse: collapse;
+	margin-bottom: 16px;
+	}
+
+th
+	{
+	font-weight: normal;
+	text-align: right;
+	padding-right: 4px;
+	}
+
+label
+	{
+	line-height: 22px;
+	}
+
+.data
+	{
+	color: #000;
+	}
+a:link { color: #000; text-decoration: none; }
+a:visited { color: #000; text-decoration: none; }
+a:active { color: #555; text-decoration: none; }
+a:hover { color: #555; text-decoration: none; }
+
+fieldset
+	{
+	width: 559px;
+	padding: 16px;
+	color: #446699;
+	border: solid 1px #446699;
+	margin-left: 10px;
+	}
+
+legend
+	{
+	color: #446699;
+	}
+
+#wrap
+    {
+    background-color: #fff;
+    width: 980px;
+    margin: 0 auto; /* tama keskittaa wrapin */
+    border: solid 1px #000;
+    }
+	
+#header
+    {
+    width: auto;
+    height: 40px;
+    color: #fff;
+    background-color: #004477;
+    padding: 8px 20px;
+    }
+
+
+#logo
+    {
+    width: 300px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+    }
+
+.logo_text
+	{
+	font-weight: bold;
+	color: #fff;
+	}
+
+#login
+	{
+	width: 500px;
+	float: right;
+	text-align: right;
+	color: #fff;
+	font-size: 14px;
+	}
+
+#login a:link { color: #fff; text-decoration: none; }
+#login a:visited { color: #fff; text-decoration: none; }
+#login a:active { color: #ccc; text-decoration: none; }
+#login a:hover { color: #ccc; text-decoration: none; }
+
+#cur_user
+	{
+	float: right;
+	}
+
+#message
+	{
+	color: #900;
+	margin-bottom: 10px;
+	}
+
+#content
+	{
+	width: auto;
+	min-height: 500px;
+	padding: 10px;
+	}
+
+#footer
+	{
+	width: auto;
+	color: #fff;
+	background-color: #008877;
+	padding: 8px 20px;
+	}
+	
+#menu
+	{
+	width: auto;
+	height: 28px;
+	background-color: #004477;
+	}
+
+#menu ul
+	{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+    }
+    
+#menu li
+	{
+    float: left;
+    margin-right: 2px;
+    }
+
+#menu li.first_tab
+	{
+    float: left;
+    margin-right: 2px;
+	margin-left: 20px;
+	}
+	  
+#menu li a
+	{
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:hover {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:visited
+    {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }
+    
+#menu li a:active
+    {
+    background: url(/site_media/img/menu_background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    float: left;
+    width: 9em;
+    display: block;
+    /* border: 0.1em solid #dcdce9; */
+    text-align: center;
+    }    
+    
+/* Hide from IE5-Mac \*/
+#menu li a
+    {
+    float: none
+    }
+/* End hide */
+
+.errorlist
+	{
+	color: #900;
+    list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+

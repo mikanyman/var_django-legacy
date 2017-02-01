@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<fieldset>
+<legend>{% trans "Edit User Profile" %}</legend>
+<form method="post" action=".">
+<table>
+  {{ form.as_table }}
+</table>
+<input type="submit" value="{% trans 'Submit' %}" />
+</form>
+</fieldset>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<fieldset>
+<legend>{% trans "User Profile" %}</legend>
+<div id="message">
+{% for p in object_list %}
+  {% trans "Click" %} <a href="{% url profiles_create_profile %}">{% trans "here" %}</a> {% trans "to view User Profile" %}
+{% endfor %}
+</fieldset>
+{% endblock %}

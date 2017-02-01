@@ -1,0 +1,6 @@
+README
+iptcinfo.py
+pip-egg-info/IPTCInfo.egg-info/PKG-INFO
+pip-egg-info/IPTCInfo.egg-info/SOURCES.txt
+pip-egg-info/IPTCInfo.egg-info/dependency_links.txt
+pip-egg-info/IPTCInfo.egg-info/top_level.txt

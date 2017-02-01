@@ -1,0 +1,16 @@
+class_list = [
+    {'Work',:'work'}, 
+    {'Expression':'expression'}, 
+    {'Manifestation':'manifestation'}, 
+    {'Item':'item'}, 
+    {'Person':'person'}, 
+    {'Family':'Family'}, 
+    {'Corporate Body':'corporate_body'}, 
+    {'Concept':'concept'}, 
+    {'Object':'object'}, 
+    {'Event':'event'}, 
+    {'Place':'place'}, 
+    {'Name':'name'}
+    ]
+
+class_list = ['Work', 'Expression', 'Manifestation', 'Item', 'Person', 'Family', 'Corporate Body', 'Concept', 'Object', 'Event', 'Place', 'Name']

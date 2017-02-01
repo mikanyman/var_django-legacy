@@ -1,0 +1,18 @@
+# CORE
+
+
+# ENHANCED
+extent 
+contact 
+citation 
+resource_locator 
+identifier 
+note 
+restrictions_on_access
+restrictions_on_use 
+dimensions 
+
+# SPECIAL
+history
+source
+characteristics

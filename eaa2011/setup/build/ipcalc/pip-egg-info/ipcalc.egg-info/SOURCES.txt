@@ -1,0 +1,5 @@
+pip-egg-info/ipcalc.egg-info/PKG-INFO
+pip-egg-info/ipcalc.egg-info/SOURCES.txt
+pip-egg-info/ipcalc.egg-info/dependency_links.txt
+pip-egg-info/ipcalc.egg-info/top_level.txt
+src/ipcalc.py

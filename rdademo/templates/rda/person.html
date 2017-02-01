@@ -1,0 +1,116 @@
+{% extends "rda/base.html" %}
+
+{% block form_fields %}
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Core Elements</legend>
+            <div class="field_wrapper">
+              {{ form.name.errors }}
+			  <div class="field_label">{{ form.name.label_tag }}</div><div class="field"> {{ form.name }}</div><div class="help_text"> {{ form.name.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.fullername.errors }}
+			  <div class="field_label">{{ form.fullername.label_tag }}</div><div class="field"> {{ form.fullername }}</div><div class="help_text"> {{ form.fullername.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.date.errors }}
+			  <div class="field_label">{{ form.date.label_tag }}</div><div class="field"> {{ form.date }}</div><div class="help_text"> {{ form.date.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.title.errors }}			
+			  <div class="field_label">{{ form.title.label_tag }}</div><div class="field"> {{ form.title }}</div><div class="help_text"> {{ form.title.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.identifier.errors }}			
+			  <div class="field_label">{{ form.identifier.label_tag }}</div><div class="field"> {{ form.identifier}}</div><div class="help_text"> {{ form.identifier.help_text }}</div>
+            </div>  
+			<div class="field_wrapper">
+              {{ form.activity.errors }}
+			  <div class="field_label">{{ form.activity.label_tag }}</div><div class="field"> {{ form.activity }}</div><div class="help_text"> {{ form.activity.help_text }}</div>
+             </div>
+			<div class="field_wrapper">
+              {{ form.proferssion.errors }}			 
+			  <div class="field_label">{{ form.profession.label_tag }}</div><div class="field"> {{ form.profession }}</div><div class="help_text"> {{ form.profession.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.other.errors }}			
+			  <div class="field_label">{{ form.other.label_tag }}</div><div class="field"> {{ form.other }}</div><div class="help_text"> {{ form.other.help_text }}</div>
+			</div>
+          </fieldset>
+        </div>
+
+        <div class="form-box">
+          <fieldset>
+            <legend>Enhanced</legend>
+            <div class="field_wrapper">
+              {{ form.biographical_information.errors }}
+              <div class="field_label">{{ form.biographical_information.label_tag }}</div><div class="field"> {{ form.biographical_information }}</div><div class="help_text"> {{ form.biographical_information.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.affiliation.errors }}			
+			  <div class="field_label">{{ form.affiliation.label_tag }}</div><div class="field"> {{ form.affiliation }}</div><div class="help_text"> {{ form.affiliation.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.place_of_birth.errors }}			
+			  <div class="field_label">{{ form.place_of_birth.label_tag }}</div><div class="field"> {{ form.place_of_birth }}</div><div class="help_text"> {{ form.place_of_birth.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.place_of_death.errors }}			
+			  <div class="field_label">{{ form.place_of_death.label_tag }}</div><div class="field"> {{ form.place_of_death }}</div><div class="help_text"> {{ form.place_of_death.help_text }}</div>
+            </div> 
+			<div class="field_wrapper">
+              {{ form.place_of_residence.errors }}			
+			  <div class="field_label">{{ form.place_of_residence.label_tag }}</div><div class="field"> {{ form.place_of_residence }}</div><div class="help_text"> {{ form.place_of_residence.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.country_associated.errors }}			
+			  <div class="field_label">{{ form.country_associated.label_tag }}</div><div class="field"> {{ form.country_associated }}</div><div class="help_text"> {{ form.country_associated.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.undifferentiated_name.errors }}			
+			  <div class="field_label">{{ form.undifferentiated_name.label_tag }}</div><div class="field"> {{ form.undifferentiated_name }}</div><div class="help_text"> {{ form.undifferentiated_name.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.address.errors }}			
+			  <div class="field_label">{{ form.address.label_tag }}</div><div class="field"> {{ form.address  }}</div><div class="help_text"> {{ form.address.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.note.errors }}			
+			  <div class="field_label">{{ form.note.label_tag }}</div><div class="field"> {{ form.note }}</div><div class="help_text"> {{ form.note.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.source.errors }}			
+			  <div class="field_label">{{ form.source.label_tag }}</div><div class="field"> {{ form.source }}</div><div class="help_text"> {{ form.source.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.status_of_identification.errors }}			
+			  <div class="field_label">{{ form.status_of_identification.label_tag }}</div><div class="field"> {{ form.status_of_identification }}</div><div class="help_text"> {{ form.status_of_identification.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.cataloguers_note.errors }}			
+			  <div class="field_label">{{ form.cataloguers_note.label_tag }}</div><div class="field"> {{ form.cataloguers_note }}</div><div class="help_text"> {{ form.cataloguers_note.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.gender.errors }}
+			  <div class="field_label">{{ form.gender.label_tag }}</div><div class="field"> {{ form.gender }}</div><div class="help_text"> {{ form.gender.help_text }}</div>
+            </div>
+			<div class="field_wrapper">
+              {{ form.language.errors }}			
+			  <div class="field_label">{{ form.language.label_tag }}</div><div class="field"> {{ form.language }}</div><div class="help_text"> {{ form.language.help_text }}</div>
+		   </div>
+          </fieldset>
+        </div>
+
+        {% comment %}
+        <div class="form-box">
+          <fieldset>
+            <legend>Special</legend>
+            <div class="field_wrapper">
+              {{ field.errors }}
+			</div>
+          </fieldset>
+        </div>
+        {% endcomment %}
+
+{% endblock%}
